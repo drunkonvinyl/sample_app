@@ -3,7 +3,7 @@ require 'spec_helper'
 describe PagesController do
   render_views
   
-  before(:each) do
+   before(:each) do
     #
     # Define @base_title here.
     #
@@ -20,6 +20,9 @@ describe PagesController do
       response.should have_selector("title", 
                                     :content => @base_title + " | Home")
     end
+    # it "should shuffle the string 'chalsea'"
+    # get 'home'
+    # response.should 
   end
 
   describe "GET 'contact'" do
